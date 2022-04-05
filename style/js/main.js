@@ -12,3 +12,6 @@ function Calculate() {
 function Clear() {
     calculatorScreen.value = '';
 }
+function del() {
+    calculatorScreen.value = calculatorScreen.value.slice(0, -1);
+}
