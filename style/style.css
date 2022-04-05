@@ -11,6 +11,110 @@ body {
   background-color: #ecf0f3;
 }
 
+body.dark {
+  background-color: #111;
+  color: #fff;
+}
+
+body.dark .calculator-body {
+  background-color: #221d1d;
+  -webkit-box-sizing: 1px 0px 9px #221d1d;
+          box-sizing: 1px 0px 9px #221d1d;
+}
+
+body.dark .calculator-body input {
+  background-color: #8f8484;
+  -webkit-box-sizing: 1px 0px 9px #221d1d !important;
+          box-sizing: 1px 0px 9px #221d1d !important;
+  color: white;
+}
+
+body.dark .calculator-body input::-webkit-input-placeholder {
+  color: white;
+}
+
+body.dark .calculator-body input:-ms-input-placeholder {
+  color: white;
+}
+
+body.dark .calculator-body input::-ms-input-placeholder {
+  color: white;
+}
+
+body.dark .calculator-body input::placeholder {
+  color: white;
+}
+
+body.dark .calculator-body button {
+  background-color: #8f8484;
+  color: #FFFF;
+}
+
+.switch-mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vh;
+}
+
+.switch-mode .check {
+  opacity: 0;
+}
+
+.switch-mode .check:checked + .icon .ball {
+  -webkit-transform: translateX(28px);
+          transform: translateX(28px);
+}
+
+.switch-mode .icon {
+  width: 60px;
+  height: 26px;
+  background-color: #292c35;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 9px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transform: scale(1.5) translateY(14px) translateX(-1px);
+          transform: scale(1.5) translateY(14px) translateX(-1px);
+}
+
+.switch-mode .icon .fa-moon {
+  color: #fff;
+}
+
+.switch-mode .icon .fa-sun {
+  color: #f1c40f;
+}
+
+.switch-mode .icon .ball {
+  width: 22px;
+  position: absolute;
+  border-radius: 50px;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +152,9 @@ body {
   color: #464646;
   font-size: 50px;
   text-align: right;
-  margin: 70px auto;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 30px;
   padding: 20px;
 }
 
@@ -69,5 +175,23 @@ body {
 
 .main-container .calculator-body button:last-child {
   width: 130px;
+}
+
+.main-container .calculator-body button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .main-container .calculator-body {
+    margin: 10px;
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    padding: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

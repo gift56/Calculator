@@ -15,3 +15,4 @@ function Clear() {
 function del() {
     calculatorScreen.value = calculatorScreen.value.slice(0, -1);
 }
+checkbox.addEventListener("change", () => document.body.classList.toggle("dark"));

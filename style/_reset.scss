@@ -1,10 +1,32 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: none;
 }
-body{
+body {
     font-family: $family;
     background-color: $bg;
+    &.dark {
+        background-color: #111;
+        color: #fff;
+
+        .calculator-body {
+            background-color: #221d1d;
+            box-sizing: $darkshadow;
+
+            input {
+                background-color: #8f8484;
+                box-sizing: $darkshadow!important;
+                color: white;
+                &::placeholder{
+                    color: white;
+                }
+            }
+            button{
+                background-color: #8f8484;
+                color: #FFFF;
+            }
+        }
+    }
 }

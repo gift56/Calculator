@@ -1,5 +1,47 @@
 @import "./varible";
 @import "./reset";
+.switch-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    .check {
+        opacity: 0;
+
+        &:checked + .icon .ball {
+            transform: translateX(28px);
+        }
+    }
+    .icon {
+        width: 60px;
+        height: 26px;
+        background-color: $bong;
+        border-radius: 50px;
+        display: flex;
+        padding: 9px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: relative;
+        transform: scale(1.5) translateY(14px) translateX(-1px);
+        .fa-moon {
+            color: $mooni;
+        }
+        .fa-sun {
+            color: $suni;
+        }
+        .ball {
+            width: 22px;
+            position: absolute;
+            border-radius: 50px;
+            top: 2px;
+            left: 2px;
+            height: 22px;
+            background-color: $mooni;
+            transition: transform 0.4s linear;
+        }
+    }
+}
 .main-container {
     display: flex;
     justify-content: center;
@@ -23,13 +65,15 @@
             color: $input-color;
             font-size: 50px;
             text-align: right;
-            margin: 70px auto;
+            margin: auto;
+            margin-top: 45px;
+            margin-bottom: 30px;
             padding: 20px;
             &:focus {
                 outline: none;
             }
         }
-        button{
+        button {
             width: 50px;
             height: 50px;
             background-color: $bg;
@@ -37,9 +81,20 @@
             border-radius: 30px;
             margin: 8px;
             font-size: 19px;
-            &:last-child{
+            &:last-child {
                 width: 130px;
             }
+            &:hover {
+                cursor: pointer;
+            }
         }
+        @media screen and (max-width: 320px) {
+            margin: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        padding: 12px;
     }
 }
