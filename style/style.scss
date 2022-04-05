@@ -1,3 +1,45 @@
 @import "./varible";
 @import "./reset";
-
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .calculator-body {
+        background-color: $bg;
+        padding: 18px;
+        border-radius: 30px;
+        box-shadow: $shadow-1;
+        display: grid;
+        grid-template-columns: repeat(4, 73px);
+        input {
+            grid-column: span 4;
+            width: 260px;
+            height: 68px;
+            background-color: $bg;
+            box-shadow: $shadow-2;
+            border: none;
+            border-radius: 30px;
+            color: $input-color;
+            font-size: 50px;
+            text-align: right;
+            margin: 70px auto;
+            padding: 20px;
+            &:focus {
+                outline: none;
+            }
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            background-color: $bg;
+            box-shadow: $btnshadow;
+            border-radius: 30px;
+            margin: 8px;
+            font-size: 19px;
+            &:last-child{
+                width: 130px;
+            }
+        }
+    }
+}
