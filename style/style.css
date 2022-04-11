@@ -13,7 +13,7 @@ body {
 
 body.dark {
   background-color: #111;
-  color: #fff;
+  color: #ffff;
 }
 
 body.dark .calculator-body {
@@ -26,28 +26,28 @@ body.dark .calculator-body input {
   background-color: #8f8484;
   -webkit-box-sizing: 1px 0px 9px #221d1d !important;
           box-sizing: 1px 0px 9px #221d1d !important;
-  color: white;
+  color: #ffff;
 }
 
 body.dark .calculator-body input::-webkit-input-placeholder {
-  color: white;
+  color: #ffff;
 }
 
 body.dark .calculator-body input:-ms-input-placeholder {
-  color: white;
+  color: #ffff;
 }
 
 body.dark .calculator-body input::-ms-input-placeholder {
-  color: white;
+  color: #ffff;
 }
 
 body.dark .calculator-body input::placeholder {
-  color: white;
+  color: #ffff;
 }
 
 body.dark .calculator-body button {
   background-color: #8f8484;
-  color: #FFFF;
+  color: #ffff;
 }
 
 .switch-mode {
@@ -61,6 +61,7 @@ body.dark .calculator-body button {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .switch-mode .check {
@@ -94,7 +95,7 @@ body.dark .calculator-body button {
 }
 
 .switch-mode .icon .fa-moon {
-  color: #fff;
+  color: #ffff;
 }
 
 .switch-mode .icon .fa-sun {
@@ -108,7 +109,7 @@ body.dark .calculator-body button {
   top: 2px;
   left: 2px;
   height: 22px;
-  background-color: #fff;
+  background-color: #ffff;
   -webkit-transition: -webkit-transform 0.4s linear;
   transition: -webkit-transform 0.4s linear;
   transition: transform 0.4s linear;
@@ -125,7 +126,6 @@ body.dark .calculator-body button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
 }
 
 .main-container .calculator-body {
@@ -138,6 +138,10 @@ body.dark .calculator-body button {
   display: grid;
   -ms-grid-columns: (73px)[4];
       grid-template-columns: repeat(4, 73px);
+}
+
+.main-container .calculator-body p {
+  grid-column: span 4;
 }
 
 .main-container .calculator-body input {

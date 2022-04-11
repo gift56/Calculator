@@ -9,23 +9,23 @@ body {
     background-color: $bg;
     &.dark {
         background-color: #111;
-        color: #fff;
+        color: $mooni;
 
         .calculator-body {
             background-color: #221d1d;
             box-sizing: $darkshadow;
 
             input {
-                background-color: #8f8484;
+                background-color: $input-bg;
                 box-sizing: $darkshadow!important;
-                color: white;
+                color: $mooni;
                 &::placeholder{
-                    color: white;
+                    color: $mooni;
                 }
             }
             button{
-                background-color: #8f8484;
-                color: #FFFF;
+                background-color: $input-bg;
+                color: $mooni;
             }
         }
     }

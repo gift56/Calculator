@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     .check {
         opacity: 0;
 
@@ -46,7 +47,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     .calculator-body {
         background-color: $bg;
         padding: 18px;
@@ -54,6 +54,9 @@
         box-shadow: $shadow-1;
         display: grid;
         grid-template-columns: repeat(4, 73px);
+        p{
+            grid-column: span 4;
+        }
         input {
             grid-column: span 4;
             width: 260px;
