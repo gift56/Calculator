@@ -15,4 +15,22 @@ function Clear() {
 function del() {
     calculatorScreen.value = calculatorScreen.value.slice(0, -1);
 }
-checkbox.addEventListener("change", () => document.body.classList.toggle("dark"));
+const tent = checkbox.addEventListener("change", () => {
+    document.body.classList.toggle("dark")
+    if (localStorage.getItem("theme") == "light") {
+        localStorage.setItem("theme", "dark");
+    }
+    else {
+        localStorage.setItem("theme", "light");
+    }
+});
+
+if (localStorage.getItem("theme") == "light") {
+    document.body.classList.remove("dark");
+}
+else if (localStorage.getItem("theme") == "dark") {
+    document.body.classList.add("dark");
+}
+else {
+    localStorage.setItem("theme", "light");
+}

@@ -4,6 +4,9 @@
     margin: 0;
     border: none;
 }
+.bill {
+    transform: translateX(28px);
+}
 body {
     font-family: $family;
     background-color: $bg;
@@ -17,13 +20,13 @@ body {
 
             input {
                 background-color: $input-bg;
-                box-sizing: $darkshadow!important;
+                box-sizing: $darkshadow !important;
                 color: $mooni;
-                &::placeholder{
+                &::placeholder {
                     color: $mooni;
                 }
             }
-            button{
+            button {
                 background-color: $input-bg;
                 color: $mooni;
             }

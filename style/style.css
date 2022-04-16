@@ -6,6 +6,11 @@
   border: none;
 }
 
+.bill {
+  -webkit-transform: translateX(28px);
+          transform: translateX(28px);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ecf0f3;
