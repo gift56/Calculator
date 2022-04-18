@@ -1,3 +1,8 @@
+window.onload(()=>{
+    
+})
+
+
 function display(num) {
     calculatorScreen.value += num;
 }

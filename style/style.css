@@ -6,9 +6,20 @@
   border: none;
 }
 
-.bill {
-  -webkit-transform: translateX(28px);
-          transform: translateX(28px);
+.pre-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: #ffff;
+}
+
+.pre-loader .loader {
+  position: absolute;
 }
 
 body {
