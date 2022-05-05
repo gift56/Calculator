@@ -1,4 +1,4 @@
-window.addEventListener("load", () => loader.classList.add("complete"));
+// window.addEventListener("load", () => loader.classList.add("complete"));
 function display(num) {
     calculatorScreen.value += num;
 }
